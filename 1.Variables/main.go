@@ -55,7 +55,7 @@ func main() {
 		can be declared both inside and outside of a function
 	*/
 	const Z int = 11 // Typed constant
-	const W = true // Untyped constant
+	const W = true   // Untyped constant
 	fmt.Println("Value of z:", Z)
 	fmt.Println("Value of w:", W)
 }
