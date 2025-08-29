@@ -3,17 +3,21 @@ package main
 import "fmt"
 
 func main() {
+	// -------------------------------
+	// IF / ELSE IF / ELSE
+	// -------------------------------
 	age := 20
 	if age > 18 {
 		fmt.Println("You are eligible to be married")
 	} else if age < 18 {
-		fmt.Print("You are not eligible to be married but you can love someone")
+		fmt.Println("You are not eligible to be married but you can love someone")
 	} else if age == 18 {
 		fmt.Println("You are just a teenager, not eligible to be married")
 	} else {
 		fmt.Println("You are an Alien")
 	}
 
+	// Another IF/ELSE example
 	age = 18
 	if age >= 18 {
 		fmt.Println("You can vote")
@@ -24,12 +28,21 @@ func main() {
 	}
 
 	/*
-		> , >= , <, <=, ==
-		and = &&
-		or = ||
-		not = !
+		Comparison & Logical Operators in Go:
+		-------------------------------------
+		>   greater than
+		>=  greater than or equal
+		<   less than
+		<=  less than or equal
+		==  equal
+		!=  not equal
+
+		&&  AND
+		||  OR
+		!   NOT
 	*/
 
+	// Using AND (&&)
 	age = 25
 	sex := "Male"
 	if age >= 18 && sex == "Male" {
@@ -38,22 +51,25 @@ func main() {
 		fmt.Println("You are not eligible for military service")
 	}
 
+	// Boolean condition
 	isPretty := true
 	if isPretty {
 		fmt.Println("You are eligible for dating")
 	}
 
+	// -------------------------------
+	// SWITCH (Expression Switch)
+	// -------------------------------
 	/*
-			switch expression {
+		switch expression {
 		case value1:
 		    code runs if expression == value1
 		case value2:
 		    code runs if expression == value2
 		default:
-		    code runs if none of the above match
+		    code runs if none of the cases match
 		}
 	*/
-
 	day := 3
 	switch day {
 	case 1:
@@ -66,6 +82,11 @@ func main() {
 		fmt.Println("Another day")
 	}
 
+	// -------------------------------
+	// SWITCH (Condition Switch)
+	// -------------------------------
+	// Can also be used WITHOUT an expression.
+	// Here we use conditions instead of matching values.
 	mark := 78
 	switch {
 	case mark >= 90:

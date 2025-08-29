@@ -4,32 +4,34 @@ import "fmt"
 
 func main() {
 	/*
-		int, int8, int16, int32, in64
-		float32, float64
-		bool
-		string
+		Go supports basic data types:
+
+		Integers: int, int8, int16, int32, int64
+		Floats:   float32, float64
+		Boolean:  bool
+		Strings:  string
 	*/
 
 	/*
-		variablename := value
-
-		 In this case, the type of the variable is inferred from the value (means that the compiler decides the type of the variable, based on the value).
-
-		 Can only be used inside functions
+		Short Variable Declaration (:=)
+		--------------------------------
+		- Syntax: variablename := value
+		- Type is INFERRED from the value (compiler decides).
+		- Can ONLY be used INSIDE functions.
 	*/
 
-	a := 10
-	b := "Hello world"
-	c := true
-	d := 10.42
+	a := 10          // int
+	b := "Hello Go!" // string
+	c := true        // bool
+	d := 10.42       // float64
 
-	/* a = true
-	This wont work as 'a' is already declared as an int
+	/*
+		a = true  // ❌ invalid → 'a' is already an int
 	*/
 
-	// When we update a preassigned value we dont need :=, only =
+	// Updating existing variables → use "=" (not :=)
 	a = 11
-	b = "Hello Hell"
+	b = "Hello World"
 	c = false
 	d = 42.10
 
@@ -39,23 +41,29 @@ func main() {
 	fmt.Println("Value of d:", d)
 
 	/*
-		var variablename type = value
-		You always have to specify either type or value (or both).
-
-		Can be used inside and outside of functions
+		Standard Variable Declaration (var)
+		-----------------------------------
+		- Syntax: var variablename type = value
+		- Type or value (or both) must be given.
+		- Can be used both inside AND outside of functions.
 	*/
+
 	var x int = 10
 	var y string = "GO GO GO"
 	fmt.Println("Value of x:", x)
 	fmt.Println("Value of y:", y)
 
 	/*
-		const CONSTNAME type = value
-		The value of a constant must be assigned when you declare it.
-		can be declared both inside and outside of a function
+		Constants (const)
+		-----------------
+		- Syntax: const CONSTNAME type = value
+		- Value must be assigned at declaration (cannot be left uninitialized).
+		- Can be declared inside OR outside functions.
+		- Cannot be changed later.
 	*/
+
 	const Z int = 11 // Typed constant
 	const W = true   // Untyped constant
-	fmt.Println("Value of z:", Z)
-	fmt.Println("Value of w:", W)
+	fmt.Println("Value of Z:", Z)
+	fmt.Println("Value of W:", W)
 }
