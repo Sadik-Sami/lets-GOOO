@@ -26,7 +26,7 @@ func main() {
 	d := 10.42       // float64
 
 	/*
-		a = true  // ❌ invalid → 'a' is already an int
+		a = true  // invalid → 'a' is already an int
 	*/
 
 	// Updating existing variables → use "=" (not :=)
