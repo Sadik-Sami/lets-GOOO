@@ -89,10 +89,14 @@ func main() {
    - IIFE (Immediately Invoked Function Expression)
    - Function expression (assign function to a variable)
 
-3. Higher Order Function
+3. Higher Order Function or First Class Function
    - Function that accepts another function as input (processOperation)
    - Function that returns another function (call)
    - Function that does both (can be built by combining patterns)
+4. Callback function
+	- When a higher order function takes another function as a parameter or the function we pass to a higher order function function as an argument
+5. First Class Citizen
+	- Any data assigned to a variable is called a first class citizen
 
 Why Important?
 - First-order functions = basic building blocks
