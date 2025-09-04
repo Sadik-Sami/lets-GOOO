@@ -10,7 +10,7 @@ import "fmt"
 // - Similar to "classes" in OOP languages (but without inheritance)
 // - Each field has a name + type
 type User struct {
-	Name string // field: Name of the user (string type)
+	Name string // field: Name of the user (string type) *Member variable or property
 	Age  int    // field: Age of the user (int type)
 }
 
@@ -25,7 +25,7 @@ func main() {
 	var user1 User
 
 	// Assign values to fields (using struct literal)
-	user1 = User{
+	user1 = User{ // The process of creating an Instance => instantiate
 		Name: "Sadik",
 		Age:  30,
 	}
@@ -38,7 +38,7 @@ func main() {
 	// 2. Declaring and Initializing Struct (Method 2: shorthand)
 	// ---------------------------
 	// Using := shorthand for cleaner initialization
-	user2 := User{
+	user2 := User{ // Instance of User type or Object
 		Name: "Al Sami",
 		Age:  32,
 	}
