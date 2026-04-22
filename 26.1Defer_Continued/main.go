@@ -63,10 +63,10 @@ func calculate() (result int) { // named return variable 'result'
 }
 
 func main() {
-	a := calc()
+	a := calculate() // named return
 	fmt.Println("main first:", a)
 
-	b := calculate()
+	b := calc() // unnamed return
 	fmt.Println("main second:", b)
 }
 

@@ -37,7 +37,7 @@ func outer() func() {
 // -------------------------------
 // call() demonstrates closures
 // -------------------------------
-func call() {
+func call() { 
 	// increment1 gets a closure from outer()
 	increment1 := outer()
 	increment1() // First call, money starts at 100 + a + p
